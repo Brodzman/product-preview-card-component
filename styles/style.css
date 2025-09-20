@@ -1,3 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url(/font//Montserrat/static/Montserrat-Bold.ttf);
@@ -13,7 +44,7 @@
   src: url(/font/Fraunces/static/Fraunces_72pt-Bold.ttf);
 }
 h2 {
-  font-family: "Monteserrat";
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 120%;
@@ -30,7 +61,7 @@ h1 {
 }
 
 p {
-  font-family: "Monteserrat";
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 160%;
@@ -47,7 +78,7 @@ p {
 }
 
 .original-price {
-  font-family: "Monteserrat";
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 0.8125rem;
   line-height: 120%;
@@ -56,7 +87,7 @@ p {
 }
 
 .cart {
-  font-family: "Monteserrat";
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 110%;
@@ -67,15 +98,35 @@ p {
   border-radius: 8px;
   gap: 8px;
   display: flex;
+  justify-content: center;
+  border: 0px;
+}
+
+.cart:hover {
+  background-color: rgb(26, 64, 50);
+  cursor: pointer;
 }
 
 body {
   background-color: rgb(242, 234, 226);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
   background-color: white;
   display: flex;
+  border-radius: 8px;
+  max-width: 600px;
+  align-items: stretch;
 }
 
 .main-content {
@@ -85,4 +136,35 @@ body {
 
 .price-container {
   display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 32px;
+}
+
+.main-content {
+  gap: 24px;
+}
+
+.price-container {
+  gap: 16px;
+  align-items: center;
+}
+
+.img-container {
+  width: 300px;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  flex-shrink: 0;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
