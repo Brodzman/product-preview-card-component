@@ -198,3 +198,26 @@ main {
     object-fit: cover;
 }
 
+@media screen and (max-width: 375px){
+    .card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-container {
+        width: 350px;
+        height: 342px;
+        border-radius: 0px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .card {
+        max-width: 350px;
+    }
+
+    .content {
+        gap: 24px;
+    }
+}
