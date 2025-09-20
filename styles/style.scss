@@ -41,18 +41,18 @@ $green700: rgb(26, 64, 50);
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(/font//Montserrat/static/Montserrat-Bold.ttf);
+    src: url(font//Montserrat/static/Montserrat-Bold.ttf);
     font-weight: 700;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url(/font/Montserrat/static/Montserrat-Medium.ttf);
+    src: url(font/Montserrat/static/Montserrat-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Fraunces';
-    src: url(/font/Fraunces/static/Fraunces_72pt-Bold.ttf);
+    src: url(font/Fraunces/static/Fraunces_72pt-Bold.ttf);
 }
 
 @mixin text-preset-1 {
